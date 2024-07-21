@@ -38,7 +38,7 @@ const About = () => {
         }}
         alt="The house from the offer."
         // src={aboutImage}
-        src={"./public/images/about.png"}
+        src={"./images/about.png"}
       />
       <Box>
         <Typography
