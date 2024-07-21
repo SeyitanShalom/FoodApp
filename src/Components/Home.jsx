@@ -98,7 +98,7 @@ const Home = ({ brandName }) => {
         }}
         alt="Home Image"
         // src={homeImage}
-        src={"/public/Images/home.png"}
+        src={"./public/images/home.png"}
       />
     </Box>
   );

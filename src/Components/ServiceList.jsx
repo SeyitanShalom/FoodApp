@@ -1,6 +1,6 @@
 export const serviceList = [
   {
-    image: "/public/Images/s1.png",
+    image: "./public/images/s1.png",
     // image: "./Images/s1.png",
     name: "Order",
     description:
@@ -8,7 +8,7 @@ export const serviceList = [
     id: "1",
   },
   {
-    image: "/public/Images/s2.png",
+    image: "./public/images/s2.png",
     // image: "./Images/s2.png",
     name: "Shipping",
     description:
@@ -16,7 +16,7 @@ export const serviceList = [
     id: "1",
   },
   {
-    image: "/public/Images/s3.png",
+    image: "./public/images/s3.png",
     // image: "./Images/s3.png",
     name: "Delivery",
     description:
