@@ -1,36 +1,34 @@
-// import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
+import About from "./Components/About";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 import Home from "./Components/Home";
-
+import Menu from "./Components/Menu";
+import Services from "./Components/Services";
+import { createTheme, colors, ThemeProvider } from "@mui/material";
+const theme = createTheme({
+  palette: {
+    primary: { main: "#02041b" },
+    secondary: { main: colors.orange[700] },
+    background: { default: "#111223" },
+    contrastText: "#dad9fa",
+  },
+  typography: {
+    fontFamily: "nunito",
+  },
+});
 function App() {
-  // const [count, setCount] = useState(0);
+  const brandName = "Graniola";
 
   return (
-    <>
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-      <Home />
-    </>
+    <ThemeProvider theme={theme}>
+      <Header />
+      <Home brandName={brandName} />
+      <About />
+      <Menu />
+      <Services />
+      <Footer />
+    </ThemeProvider>
   );
 }
 
